@@ -106,6 +106,62 @@ else if(st=="D"){
   Console.WriteLine($"Factorial of the number={factorial}");
 
 }
+else if(st=="E"){
+  Console.WriteLine("Enter a Fibonacci");
+  int n=Convert.ToInt32(Console.ReadLine());
+  Series.fibonacci.fibo(n);
+  // Console.WriteLine($"Factorial of the number={factorial}");
+
+}
+else if(st=="F"){
+  
+  Console.WriteLine("Enter lower limit of range For Prime Number");
+  int a=Convert.ToInt32(Console.ReadLine());
+  Console.WriteLine("Enter upper limit of range");
+  int b=Convert.ToInt32(Console.ReadLine());
+
+  Prime.Number.range(a,b);
+  // Console.WriteLine($"Factorial of the number={factorial}");
+
+}
+
+else if(st=="G"){
+  Console.WriteLine("Enter a number");
+  int a=Convert.ToInt32(Console.ReadLine());
+  Console.WriteLine("Enter another number");
+  int b=Convert.ToInt32(Console.ReadLine());
+  // Console.WriteLine($"Factorial of the number={factorial}");
+  int gcd=GCD.Number.diviser(a,b);
+  Console.WriteLine($"GCD of {a} and {b} is {gcd}");
+
+}
+else if(st.CompareTo("H")==0){
+  Console.WriteLine("Enter size of pattern");
+    int a=Convert.ToInt32(Console.ReadLine());
+    Pattern1.Triangle.tfirst(a);  
+
+}
+else if(st.CompareTo("I")==0){
+  Console.WriteLine("Enter size of pattern");
+    int a=Convert.ToInt32(Console.ReadLine());
+    PatternPyra.Triangle.Patt(a);
+
+}
+else if(st=="J"){
+  Console.WriteLine("Enter length of array");
+  int sz=Convert.ToInt32(Console.ReadLine());
+  
+  int []a=new int[sz];
+  for(int i=0;i<sz;i++){
+    a[i]=Convert.ToInt32(Console.ReadLine());
+  }
+ int x= PatternZig.Zig.Patt(a,3);
+ Console.WriteLine(x+"sdjfb");
+
+}
+
+
+
 
 // double Discount=Question1.Goods_amount.calculateDiscount();
 // Console.WriteLine($"You Saved {Discount} rupees");
