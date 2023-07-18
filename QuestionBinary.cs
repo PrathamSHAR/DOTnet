@@ -1,7 +1,8 @@
 using System;
-namespace PatternZig{
-    class Zig{
-        public static int Patt(int []a,int n){
+namespace Binary{
+    class Search{
+        
+        public static int doSearch(int []a,int n){
             
          int st=0;
          int l=a.Length;

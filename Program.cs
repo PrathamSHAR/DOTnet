@@ -155,8 +155,26 @@ else if(st=="J"){
   for(int i=0;i<sz;i++){
     a[i]=Convert.ToInt32(Console.ReadLine());
   }
- int x= PatternZig.Zig.Patt(a,3);
- Console.WriteLine(x+"sdjfb");
+ 
+  Console.WriteLine("Enter Key to be searched");
+  int key=Convert.ToInt32(Console.ReadLine());
+
+ int x=Binary.Search.doSearch(a,key);
+ if(x==-1){
+  Console.WriteLine($"{key} is Not found");
+ }
+ else{
+  Console.WriteLine($"{key} is found at {x+1}th Position");
+
+ }
+
+
+}
+
+else if(st=="K"){
+  Console.WriteLine("Enter size of pattern");
+  int sz=Convert.ToInt32(Console.ReadLine());
+  Zig.PatternConcave.printPattern(sz);
 
 }
 
